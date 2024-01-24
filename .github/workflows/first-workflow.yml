@@ -1,7 +1,7 @@
 name: .NET Container
 
 env:
-  registryName: MPPContainerReg.azurecr.io
+  registryName: mppcontainerreg.azurecr.io
   repositoryName: techboost/dotnetcoreapp
   dockerFolderPath: ./Application/src/RazorPagesTestSample
   tag: ${{github.run_number}}
