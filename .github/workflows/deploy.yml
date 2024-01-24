@@ -6,7 +6,10 @@ env:
 
 name: Azure Bicep
 jobs:
-  build-and-deploy:
+  build-and-deploy:  
+    permissions:
+      id-token: 'write'
+      
     runs-on: ubuntu-latest
     steps:
     # Checkout code
