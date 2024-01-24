@@ -4,11 +4,13 @@ on:
 env:
   targetEnv: dev
 
+permissions:
+  id-token: 'write'
+  contents: read
+  
 name: Azure Bicep
 jobs:
   build-and-deploy:  
-    permissions:
-      id-token: 'write'
       
     runs-on: ubuntu-latest
     steps:
